@@ -1,0 +1,55 @@
+.visits-container {
+  background-color: #FFFF;
+  padding: 10px;
+
+  .visits-header {
+    margin-bottom: 10px;
+  }
+  .visits-body {
+    .active-area-container {
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
+      border: 1px solid lightgray;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #5453D4;
+      color: white;
+
+      .area-number {
+        width: 20%;
+        font-weight: 600;
+        color: white;
+      }
+      .area-name {
+        width: 80%;
+      }
+      .dots {
+        width: 5%;
+      }
+    }
+    .inactive-area-container {
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
+      border: 1px solid lightgray;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+
+      .area-number {
+        width: 20%;
+        font-weight: 600;
+        color: #9982D1;
+      }
+      .area-name {
+        width: 80%;
+
+      }
+      .dots {
+        width: 5%;
+      }
+    }
+  }
+}
