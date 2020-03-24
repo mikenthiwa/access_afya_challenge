@@ -1,6 +1,5 @@
 .analytics-page {
   font-family: 'Didact Gothic', sans-serif;
-
   .analytics-title-section {
     background-color: #F5F6FA;
     padding: 30px;
@@ -9,5 +8,14 @@
   }
   .analytics-section {
     background-color: #F5F6FA;
+    padding: 10px 30px;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+
+    .section-A {
+      background-color: #FFFF;
+      border-radius: 5px;
+      box-shadow: 1px 1px 10px 2px lightgrey;
+    }
   }
 }

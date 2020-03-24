@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import AnalyticsHeader from '../../components/analyticsHeader';
+import Visits from "../../components/visits";
 import './analytics.scss';
 
 
@@ -20,7 +21,7 @@ class Analytics extends Component {
         {this.renderSections('analytics-title-section', 'Analytics')}
         <div className="analytics-section">
           <div className="section-A">
-            <div className="visits-section" />
+              {this.renderSections("visits-section", <Visits />)}
           </div>
           <div className="section-B">
             <div className="key-issues-section-container" />
