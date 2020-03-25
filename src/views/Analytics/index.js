@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
 import AnalyticsHeader from '../../components/analyticsHeader';
 import Visits from "../../components/visits";
+import Issue from "../../components/keyIssues";
+import Monitor from "../../components/monitoring";
+import MonitoringUserDetails from "../../components/monitoring/monitoringUserDetails";
+import MonitorGraph from "../../components/monitorGraph";
 import './analytics.scss';
 
 
@@ -24,11 +28,12 @@ class Analytics extends Component {
               {this.renderSections("visits-section", <Visits />)}
           </div>
           <div className="section-B">
-            <div className="key-issues-section-container" />
+              {this.renderSections("key-issues-section-container", <Issue />)}
             <div className="monitoring-section-container" >
-              <div className="monitoring-period-container" />
-              <div className="monitoring-graphs-container" />
-              <div className="monitoring-details-container" />
+                {this.renderSections("monitoring-period-container", <Monitor />)}
+                {this.renderSections("monitoring-graphs-container", <MonitorGraph />)}
+              {/*<div className="monitoring-graphs-container" />*/}
+                {this.renderSections('monitoring-details-container', <MonitoringUserDetails />)}
             </div>
           </div>
         </div>
