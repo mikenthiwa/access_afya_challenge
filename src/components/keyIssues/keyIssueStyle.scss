@@ -1,47 +1,60 @@
-.key-issue-container {
+.key-issue-cont {
   background-color: #FFFF;
   border-radius: 5px;
   box-shadow: 1px 1px 10px 2px lightgrey;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-
-.issue-container-active {
-  padding: 5px;
-  border: 1px solid blue;
-  border-radius: 5px;
-  width: 200px;
   margin-bottom: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  cursor: pointer;
+
+  .key-issue-title {
+    //color: #CFCFCF;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .key-issue-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .issue-container-active {
+      padding: 5px;
+      border: 1px solid blue;
+      border-radius: 5px;
+      width: 200px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      cursor: pointer;
 
 
-  .issue {
-    .area-name {
-      font-size: 12px;
+      .issue {
+        .area-name {
+          font-size: 12px;
+        }
+      }
     }
   }
-  }
-}
 
-.issue-container-inactive {
-  padding: 5px;
-  border: 1px solid lightgrey;
-  border-radius: 5px;
-  width: 200px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  cursor: pointer;
+  .issue-container-inactive {
+    padding: 5px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    width: 200px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
 
-  .issue {
-    .area-name {
-      font-size: 12px;
+    .issue {
+      .area-name {
+        font-size: 12px;
+      }
     }
   }
 }
