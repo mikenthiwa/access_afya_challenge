@@ -16,7 +16,6 @@ class Issue extends Component {
     };
 
   selected = (issueName) => {
-    console.log(12345);
     Object.keys(this.state).forEach(issue => {
         if(this.state[issue]) {
             this.setState(prevState => ({
@@ -45,8 +44,11 @@ class Issue extends Component {
 
   render() {
     return (
-      <div className="key-issue-container">
-        {this.renderIssues()}
+      <div className="key-issue-cont">
+          <div className="key-issue-title">KEY ISSUES</div>
+          <div className="key-issue-container">
+            {this.renderIssues()}
+          </div>
       </div>
     );
   }
