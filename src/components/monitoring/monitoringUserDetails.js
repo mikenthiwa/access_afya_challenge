@@ -49,7 +49,7 @@ class MonitoringUserDetails extends Component {
                 </div>
             </div>
             <div className='data efficiency'>
-              <div>{Efficiency}</div>
+              <div>{Efficiency + '%'}</div>
               <ProgressBar now={Efficiency}/>
             </div>
             <div className='data reportedIssues'>
